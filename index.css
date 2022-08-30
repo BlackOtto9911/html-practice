@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background-image: url(img/logo.png);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding: 3%;
+}
+
+.container{
+    width: 50%;
+    text-align: center;
+    margin: 23px auto;
+}
+
+h1{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+hr{
+    height: 4px;
+    border: none;
+    background-color: #543880;
+
+    margin-top: 22px;
+    margin-bottom: 35px;
+}
+
+p{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 300;
+}
+
+.action{
+    width: 80%;
+    margin: auto;
+}
+.log-action, .sign-action{
+    display: inline-block;
+    vertical-align: top;
+}
+.log-action hr{
+    width: 80%;
+    height: 2px;
+    border: none;
+    background-color: #f6c359;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.in{
+    margin: 15px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #595959;
+    text-decoration: none;
+
+    transition: 0.1s;
+}
+.log{
+    color: white; 
+}
+.sign:hover, .log:hover{
+    color: white;
+}
+
+
+form{
+    background-color: rgba(141, 122, 170, 0.8); /*#8d7aaa*/
+    border-radius: 20px;
+
+    width: 100%;
+    margin-top: 40px;
+    padding: 25px;
+}
+.text{
+    font-size: 25px;
+    margin: 15px;
+    color: #d2d2d2;
+}
+
+.field{
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(150, 131, 180, 1); /*#9683b4*/
+    opacity: 0.8;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+}
+.white{
+    width: 80%;
+    height: 50px;
+    border-radius: 22px;
+    background-color: white;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+    z-index: 1;
+}
+
+.field::placeholder{
+    font-size: 22px;
+    color: #d2d2d2;
+    opacity: 0.4;
+    font-weight: 500;;
+}
+
+.gender input{
+    transform: scale(1.35);
+    margin: 0 10px;
+    position: relative;
+    top: -2px;
+}
+.gender label{
+    font-size: 25px;
+    color: white;
+    font-weight: 300;
+    line-height: 25px;
+    margin: 0 10px;
+}
+
+.container-service{
+    display: flex;
+    width: 40vw;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.item label{
+    margin: 0 10px;
+    font-size: 25px;
+    color: white;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.item input{
+    transform: scale(1.5);
+    position: relative;
+    top: -3px;
+    margin: 0 10px;
+}
+
+
+.about-you .textarea{
+    resize: none;
+    outline: none;
+    border: none;
+    width: 80%;
+    border-radius: 20px;
+    background-color: #ab9cc3;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 22px;
+    color: white;
+    font-weight: 300;
+}
+.textarea::placeholder{
+    font-size: 23px;
+    color: #d2d2d2;
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+.gender, .service, .about-you{
+    margin-bottom: 50px;
+}
+
+input[type=submit]{
+    width: 80%;
+    padding: 15px 0;
+    border-radius: 20px;
+    border: 4px solid rgb(165,165,165);
+    background-color: #f5c259;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: #595959;
+}
+.end{
+    border: none;
+    height: 6px;
+    background-color: #c2b2c2ba;
+    border-radius: 5px;
+}
+
+/*menu*/
+.menu{
+    position: absolute;
+    height: 100vh;
+    width: 25vw;
+    top: 0px;
+    left: 0;
+}
+.div-with-menu{
+    position: absolute;
+    width: 120px;
+    height: 240px;
+    top: -20px;
+    right: 5%;
+
+}
+.hamburger-menu{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#8d7aaa, #50327e);
+}
+.triangle-flag{
+    position: relative;
+    top: -45px;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 45px solid white;
+}
+.fit{
+    width: 70%;
+    margin: 8px auto;
+    margin-left: 21px;
+}
+.line{
+    position: relative;
+    display: block;
+    top: 50px;
+    z-index: 3;
+    background-color: white;
+    width: 47%;
+    height: 8px;
+    transition: 0.8s;
+
+}
+.long{
+    width: 90%;
+    transition: 0.2s;
+}
+.first, .second{
+    display: inline-block;
+}
+.second{
+    position: relative;
+    left: -7px;
+}
+.third{
+    margin: 12px 0 5px 0;
+}
+.forth, .fifth{
+    display: inline-block;
+}
+.fifth{
+    position: relative;
+    left: -7px;
+}
+
+.second, .fifth{
+    transform-origin: translate(100%, 50%);
+}
+.firsth, .forth{
+    transform-origin: translate(0%, 50%);
+}
+
+.checkbox-input-menu{
+    position: absolute;
+    width: 120px;
+    height: 90px;
+    z-index: 5;
+    opacity: 0;
+
+    right: 5%;
+    top: 30px;
+    
+    cursor: pointer;
+}
+
+.checkbox-input-menu:checked ~ .div-with-menu .hamburger-menu .fit .first{
+    transform: rotate(43deg) translate(5px, 6px)
+}
+.checkbox-input-menu:checked ~ .div-with-menu .hamburger-menu .fit .second{
+    transform: rotate(-43deg) translate(-5px, 6px)
+}
+.checkbox-input-menu:checked ~ .div-with-menu .hamburger-menu .fit .third{
+    opacity: 0;
+}
+.checkbox-input-menu:checked ~ .div-with-menu .hamburger-menu .fit .forth{
+    transform: rotate(-43deg) translate(5px, -6px)
+}
+.checkbox-input-menu:checked ~ .div-with-menu .hamburger-menu .fit .fifth{
+    transform: rotate(43deg) translate(-5px, -6px)
+}
+
+
+/**/
+.div-with-links{
+    position: absolute;
+    background-image: linear-gradient(#c0b6cf 60%, #897c9d);
+    width: 250px;
+    height: 600px;
+    right: 35%;
+    top: -600px;
+    transition: 1.5s;
+}
+.triangle-flag-second{
+    position: absolute;
+    bottom: 0;
+    z-index: 7;
+    width: 0;
+    height: 0;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+    border-bottom: 60px solid white;
+}
+
+.links{
+    list-style: none;
+    width: 70%;
+    margin: 10px auto;
+    /* text-align: center; */
+    font-size: 24px;
+}
+.link a{
+    text-decoration: none;
+    color:#543880;
+    transition: 0.2s;
+}
+.link{
+    margin: 8px 0;
+}
+.link a:hover{
+    color: #8976a8;
+}
+
+.checkbox-input-menu:checked ~ .div-with-links{
+    transform: translateY(600px);
+}

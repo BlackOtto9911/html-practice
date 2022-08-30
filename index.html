@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="menu">
+        <input type="checkbox" class="checkbox-input-menu">
+        <div class="div-with-menu">
+            <div class="hamburger-menu">
+                <div class="fit">
+                    <div class="line first"></div>
+                    <div class="line second"></div>
+                    <div class="line third long"></div>
+                    <div class="line forth"></div>
+                    <div class="line fifth"></div>
+                </div>
+            </div>
+            <div class="triangle-flag"></div>
+        </div>
+        <div class="div-with-links">
+            <div class="links">
+                <li class="link"><a href="" class="a-link">Hello World</a></li>
+                <li class="link"><a href="" class="a-link">Все курсы</a></li>
+                <li class="link"><a href="" class="a-link">Для родителя</a></li>
+                <li class="link"><a href="" class="a-link">Для ребенка</a></li>
+                <li class="link"><a href="" class="a-link">Для учителя</a></li>
+                <li class="link"><a href="" class="a-link">О нас</a></li>
+                <li class="link"><a href="" class="a-link">Контакты</a></li>
+                <li class="link"><a href="" class="a-link">Сотрудничество</a></li>
+            </div>
+            <div class="triangle-flag-second"></div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Школа программирования "Hello World"</h1>
+        <hr>
+        <p>Здравствуйте! Мы очень рады, что <i>Вы</i> решили присоединиться к нам!</p>
+        <p>Пожалуйста, заполните форму регистрации ниже.</p>
+
+        <form action="https://fe.it-academy.by/TestForm.php">
+            <div class="action">
+                <div class="sign-action">
+                    <a href="in.html" class="sign in">Войти</a>
+                </div>
+                <div class="log-action">
+                    <a href="#" class="log in">Регистрация</a>
+                    <hr>
+                </div>
+            </div>
+            
+            <div class="login">
+                <p class="text">Придумай логин</p>
+                <input type="text" name="login" placeholder="Придумай логин" class="field">
+                <div class="white"></div>
+            </div>
+
+            <div class="password">
+                <p class="text">Придумай пароль</p>
+                <input type="password" name="password" placeholder="Придумай пароль" class="field">
+                <div class="white"></div>
+            </div>
+
+            <div class="gender">
+                <p class="text">Выбери пол</p>
+                <input type="radio" name="gender" id="male" value="male"> <!--checked="true"-->
+                <label for="male">Мужской</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Женский</label>
+            </div>
+
+            <div class="service">
+
+                <p class="text">Выбери желаемые курсы</p>
+
+                <div class="container-service">
+                    <div class="item">
+                        <input type="checkbox" id="front" name="option" value="front">
+                        <label for="front">Frontend</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="roblox"  name="option">
+                        <label for="roblox">Roblox</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="figma" name="option">
+                        <label for="figma">Figma</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="scratch" name="option">
+                        <label for="scratch">Scratch</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="python" name="option">
+                        <label for="python">Python</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="Unity" name="option">
+                        <label for="Unity">Unity</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-you">
+                <p class="text">Расскажи немного о себе, о своих достижениях и мечтах</p>
+                <textarea name="about-you" cols="50" rows="5" placeholder="Расскажи о себе!" class="textarea"></textarea>
+            </div>
+
+            <input type="submit" value="Зарегистрироваться" class="submit">
+
+            <hr class="end">
+        </form>
+    </div>
+</body>
+</html>

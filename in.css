@@ -1,0 +1,51 @@
+.sign-action hr{
+    width: 80%;
+    height: 2px;
+    border: none;
+    background-color: #f6c359;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+/**/
+.sign{
+    color: white; 
+}
+.log{
+    color: #595959;
+}
+
+
+.save{
+    position: relative;
+    top: -30px;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.save label{
+    font-size: 25px;
+    font-weight: 300;
+    margin: 15px;
+    color: #d2d2d2;
+}
+.save input{
+    position: relative;
+    top: -3px;
+
+    transform: scale(1.5);
+}
+
+.forgot{
+    position: relative;
+    top: -10px;
+
+    font-size: 25px;
+    font-weight: 300;
+    color: #d2d2d2;
+}
+.forgot:hover{
+    text-decoration: none;
+}
